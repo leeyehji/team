@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./mypage.css">
+    <link rel="stylesheet" type="text/css" href="./mypage3.css">
 </head>
 <body>
     <div id="header">
@@ -21,12 +21,12 @@
     </div>
 
     <div id="mypageContent">
-        <div id="nav">
-            <p>&emsp;마이페이지</p>
+        <div id="nav" >
+            <p style="padding-bottom: 5px; font-size: 1.3em;color: white;border-bottom: white dotted; display: inline-block;">마이페이지</p>
             <ul id="smallNav">
                 <div>
                     <li>
-                        회원정보관리
+                        <p>&emsp13;회원정보관리</p>
                         <ul>
                             <li>회원정보 수정</li>
                             <li>내가 쓴 글</li>
@@ -34,7 +34,7 @@
                         </ul>
                     </li>
                     <li>
-                        나의 일정관리
+                        <p>&emsp13;나의 일정관리</p>
                         <ul>
                             <li>캘린더 보기</li>
                             <li>캘린더 작성하기</li>
@@ -42,7 +42,6 @@
                         </ul>
                     </li>
                 </div>
-                <ul id="navGradient"></ul>
             </ul>
         </div>
 
@@ -50,27 +49,29 @@
             <div id="profile_userIntro">
                 <div id="profileSet">
                     <div class="profile"></div><br>
-                    <button type="button" width="1000px" id="ChangeprofileImg">
-                        프사변경버튼
+                    <button type="button" id="ChangeprofileImg">
+                        프사변경
                     </button>    
                 </div>
                 
                 <div id="userIntro">
-                    이름: 홍길동<br>
-                    등급: travelKing<br>
-                    아이디: hong1234<br>
-                    이메일: hong1234@naver.com<br>
-                    가입일: 2024.03.08<br>
-                    작성한 글: 5개
+                    <div id="userIntroContent">
+                        <strong>이름:</strong>  &emsp14;홍길동<br>
+                        <strong>등급:</strong>  &emsp14;travelKing<br>
+                        <strong>아이디:</strong>  &emsp14;hong1234<br>
+                        <strong>이메일:</strong>  &emsp14;hong1234@naver.com<br>
+                        <strong>가입일:</strong>  &emsp14;2024.03.08<br>
+                        <strong>작성한 글:</strong>  &emsp14;5개
+                    </div>
                 </div>
             </div>
 
             <div id="boxes">
                 <div class="contentBox" id="contentBox1">
-                    최근 작성 글<br>
-                    <div id="boxContent">
+                    <div class="boxContent">
                         <div id="box1ContentImg"></div>
                         <div id="box1Content">
+                            <strong>최근 작성 글</strong><br><br>
                             여기에 뭔가 글을 써야겠지. 무슨말이 좋을까.일단
                             아무렇게나 써두면 미래의 내가 수습하겠지. 집에 가고싶다.
                             근데 할 것이 산 더미라서 집에 가지를 못하네. 내 몸이 한 
@@ -81,8 +82,12 @@
                 </div>
 
                 <div class="contentBox">
-                    나의 캘린더<br><br>
-                    <div id="myCalendar"></div>
+                    <div class="boxContent">
+                        <div id="box2Content">
+                            <strong>나의 캘린더</strong><br><br>
+                            <div id="myCalendar"></div>    
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
