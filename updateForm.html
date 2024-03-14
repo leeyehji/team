@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/miniP.css">
+    <link rel="stylesheet" type="text/css" href="./css/nav.css">
+    <link rel="stylesheet" type="text/css" href="./css/frame.css">
+    <link rel="stylesheet" type="text/css" href="./css/updateForm.css">
+</head>
+<body>
+    <header></header>
+
+    <div id="frameContent">
+        <div id="nav"></div>
+        <div id="content">
+            <form name="updateForm" id="updateForm" method="post" action="./mypage.html">
+               <table cellspacing="0">
+                    <thead>
+                        <tr><p>회원정보 수정 페이지</p></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="center">이름</th>
+                            <td>
+                                <input type="text" name="name" id="name" value="${requestScope.memberDTO.getName()}">
+                                <div id="noname"></div>       
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>아이디</th>
+                            <td>
+                                <input type="text" name="id" id="id" readonly="readonly" value="${memId}">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호</th>
+                            <td>
+                                <input type="password" name="pwd" id="pwd" placeholder="비밀번호 입력">
+                                <div id="nopwd"></div>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <th>재확인</th>
+                            <td>
+                                <input type="password" name="repwd" id="repwd"  placeholder="비밀번호 입력">
+                                <div id="incorrectPW"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>성별</th>
+                            <td>
+                                <input type="radio" name="gender" value="0" >
+                                <label for="남성">남성</label>
+                                <input type="radio" name="gender" value="1">
+                                <label for="여성">여성</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td>
+                                <input type="email" name="email1"  value="${memberDTO.email1}">
+                                @
+                                <input type="email" readonly name="email2" id="email2" value="${memberDTO.email2}">
+                                <select name="email3" onclick="javascript:emailInput(); return false;">
+                                    <option value="직접입력" id="self" selected>직접입력</option>
+                                    <option value="naver.com" id="naver">naver.com</option>
+                                    <option value="goole.com" id="goole">goole.com</option>
+                                    <option value="hanmail.com" id="hanmail">hanmail.com</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>주소</th>
+                            <td>
+                                <input type="text" readonly id="zipcode" name="zipcode" value="${memberDTO.zipcode}" > 
+                                
+                                <button type="button" onclick="javascript:searchAddress(); return false;">우편번호검색</button>
+                                <br>
+                                <input type="text" value="${memberDTO.addr1}" name="addr1" id="addr1"   ><br>
+                                <input type="text" name="addr2" id="addr2"   value="${memberDTO.addr2}" >
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2">
+                                <!-- <input type="button" onclick="javascript:checkWrite()" value="회원가입">-->
+                                <button type="button" id="join" onclick="javascript:checkUpdate();">회원정보수정</button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <input type="reset" value="&emsp;다시입력&emsp;" onclick="location.reload()">
+                            </th>
+                        </tr>
+                    </tfoot>
+                    </tbody>
+               </table> 
+            </form>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="http://code.jQuery.com/jquery-3.7.1.min.js"></script>
+<script src="./js/miniP.js"></script>
+<script src="./js/mypage.js"></script>
+<script src="./js/updateForm.js"></script>
+</html>

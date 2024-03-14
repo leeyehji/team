@@ -1,0 +1,50 @@
+#updateForm{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin:0 auto;
+    text-align:left;
+}
+table{
+    padding: 0 20px;
+    border: 1px #CAE9FF solid;
+}
+p{
+    font-size: 30px;
+    
+}
+td,th{
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px #CAE9FF solid;
+}
+th:last-child{
+    border: none;
+}
+#id, #name, #pwd, #repwd{
+    width: 300px;
+}
+label:first-of-type {
+    margin-right: 100px;
+}
+input[type="email"]{
+    width: 100px;
+}
+input[name="zipcode"]{
+    width: 150px;
+    margin-bottom: 10px;
+}
+input[name="addr1"],[name="addr2"]{
+    width: 300px;
+    margin-bottom: 7px;
+}
+tfoot th{
+    padding: 10px;
+}
+tfoot th button, tfoot th input{
+    padding: 0 100px;
+    background-color: #378CE7;
+    border: #378CE7 solid;
+    border-radius: 5px;
+    color: white;
+}
