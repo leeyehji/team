@@ -1,9 +1,18 @@
-
+/*nav*/
+#nadeuliNav {
+    border: #A5C1C8 solid;
+    border-radius: 10px;
+    position: fixed; /* 요소를 고정 위치에 배치 */
+    width: 200px; /* 너비 설정 */
+    padding: 17px; /* 내부 여백 */
+    font-weight: bolder; /* 글자 두께 */
+}
 #nadeuliNav> li:first-of-type{
-    margin-top: 60px;
+    margin-top: 30px;
 }
 #nadeuliNav > li{
     cursor: pointer;
+    margin-left: 10px;
 }
 #nadeuliNav > li>.nav-content{
     padding: 0;
@@ -14,7 +23,7 @@
     text-overflow: ellipsis;
     margin-right: 50px;
     text-decoration: none;
-    color: #378CE7;
+    color: #224148;
 }
 .nav-content>li>ul>li>a {
     white-space: nowrap;
@@ -22,9 +31,10 @@
     text-overflow: ellipsis;
     margin-right: 30px;/*너무 많이 잡으면 nav 영역 넘어가 content영역 침범!*/
     text-decoration: none;
-    color: #378CE7;
+    color: #496B73;
     font-size: 12.8px;/*하위 항목은 점점 글씨가 작아지나 여기는 너무 작아져서 바로 상위 항목과 같은 글씨 크기로 맞춤*/
 }
+
 .nav-content>li:first-child{
     margin-top: 3px;
 }
@@ -34,4 +44,28 @@
     text-align: left;
     margin-top: 5px;
     display: inline-block;
+}
+
+/*updown button*/
+#upDownBtn {
+    position: fixed; /* 요소를 고정 위치에 배치 */
+    right: 10px; /* 오른쪽에서부터의 거리 */
+    bottom: 15px; /* 하단에서부터의 거리 */
+    display: flex; /* Flexbox 레이아웃 사용 */
+    flex-direction: column; /* 자식 요소들을 세로 방향으로 정렬 */
+    padding: 10px; /* 내부 여백 */
+}
+
+#upBtn, #downBtn {
+    font-size: 15px;
+    padding: 5px 20px;
+    margin-bottom: 10px; /* 버튼 사이의 간격 */
+    background-color: #CAE9FF;
+    border: none;
+    border-radius: 5%;
+}
+
+/* 마지막 버튼의 margin-bottom을 제거 */
+#downBtn {
+    margin-bottom: 0;
 }

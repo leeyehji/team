@@ -10,6 +10,7 @@ function setupMenuHandler() {
     }
     );
 }
+/*include:jsp 삭제 */
 function setupNavHandler() {
     $(".nav-content").hide();
 
@@ -25,6 +26,7 @@ $(".nav-content").click(function(event) {
 }
 
 // fetch를 이용하여 a.html 파일의 내용을 가져옵니다.
+/*include:jsp 삭제 */
 fetch('header.html')
     .then(response => response.text()) // 응답을 텍스트로 변환합니다.
     .then(data => {
@@ -32,7 +34,7 @@ fetch('header.html')
         setupMenuHandler();
     })
     .catch(error => console.error('Error:', error)); // 오류 처리
-
+/*include:jsp 삭제 */
     fetch('nav.html')
     .then(response => response.text()) // 응답을 텍스트로 변환합니다.
     .then(data => {
@@ -40,7 +42,7 @@ fetch('header.html')
         setupNavHandler();
     })
     .catch(error => console.error('Error:', error)); // 오류 처리
-
+/*include:jsp 삭제 */
     fetch('footer.html')
     .then(response => response.text()) // 응답을 텍스트로 변환합니다.
     .then(data => {
