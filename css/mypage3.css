@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: auto;
+    min-width: 770px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+/*header*/
+/*mypageContent*/
+#mypageContent {
+    display: flex;
+}
+
+/*content nav*/
+#nav {
+    width: 200px;
+    padding: 17px;
+    /*background-color: #CAE9FF;*/
+    border-right:#CAE9FF solid 3px;
+    /*background-image: url('./img/KakaoTalk_20240307_195544950_04.jpg');
+    background-size: cover;*/
+    box-sizing: border-box;
+    color: #FFECCF;
+    font-weight: bolder;
+}
+
+#nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #1B1F28;
+}
+#smallNav > div{
+    min-height: calc(100vh - 100px);
+}
+#smallNav > #navGradient{
+    margin-top: 0;
+}
+#nav> ul > li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+#nav>ul>div>li{
+    margin: 0 8px 0 8px;
+    padding-top: 2px;
+    /*border-left: white dotted;*/
+    /*border-right: white dotted;*/
+    /*border-bottom:  white dotted;*/
+}
+#nav ul ul{
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+#nav ul ul li {
+    font-weight:550;
+    font-size: 0.8em;
+    color: lightslategray;
+    margin-bottom: 6px;
+    margin-left: 25px;
+}
+
+/*contennt*/
+#content {
+
+    width: 75%;
+    padding: 5% ;
+    box-sizing: border-box;
+    border-right: #36404E solid 1px;
+    /*border-bottom: #3F568E dotted;*/
+    /*border-right: #3F568E dotted;*/
+
+}
+#profile_userIntro {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    padding-right: 0;
+}
+#profileSet{
+    display: inline-block;
+}
+.profile {
+    margin-right: 50px;
+    /*background-color: #CAE9FF;*/
+    border:#CAE9FF solid 3px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-image: url('./img/user5.png');
+    background-size: cover;
+    margin-bottom: 15px;
+}
+#ChangeprofileImg{
+    margin-left: 42px;/* =(.profile의 width - width)/2*/
+    width: 66px;
+    height: 25px;
+    font-size: 0.8em;
+    background-color: #378CE7;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+#userIntro {
+    margin: 0;
+    padding: 5px 0 5px 5px;
+    display: inline-block;
+    padding-left: 10px;
+    /*background-color: #CAE9FF;*/
+    border:#CAE9FF solid 3px;
+    border-radius: 10px;
+    width:100%;
+    min-width: 10%; /*동적 크기 조절 시...*/
+    height: 194px;
+    font-size: 0.95em;
+    color:rgb(77, 109, 142)
+}
+#userIntroContent{
+    /*border: white dotted;*/
+    padding: 20px 5px 20px 25px; 
+}
+
+#boxes{
+    /*display: flex;*/
+    margin-top: 60px;
+    
+    /*background-color: #CAE9FF;*/
+}
+
+.contentBox {
+    height: 700px; /* 원하는 높이로 수정 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+   /* display: inline-block;*/
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    font-weight: bolder;
+    border:#CAE9FF solid 3px;
+    border-radius: 10px;
+}
+.contentBox:first-of-type{
+    height: 200px; /* 원하는 높이로 수정 */
+}
+.boxContent{
+    /*border: 3px white dotted;*/
+    height: 190px;
+}
+.boxContent strong{/*box1 나의 대표 글*/
+   padding-left: 10px;
+}
+.boxContent strong:first-child{/*box2 나의 캘린더*/
+    padding-left: 0px;
+ }
+#box1Img{/*코드로 이미지 크기 잡아 둘 건데 그 wh 동일하게 잡아 둘 것*/
+    border: #378CE7 solid 1px;
+    background-image: url('./image/seoul_cherry_blossom_3.jpeg');
+    background-size: cover;
+    width: 500px;
+    height:120px;
+    margin-right: 30px;
+}
+#box1Content {
+    display: flex; /* Flexbox를 활성화합니다. */
+    align-items: flex-start; /* 자식 요소들을 상단으로 정렬합니다. */
+    padding: 10px;
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+#box2Content{
+    padding: 10px;
+    font-weight: lighter;
+}
+
+#myCalendar{
+    background-image: url('./img/c.png');
+    background-size: cover;
+    min-width: 35%;
+    height: 150px;
+}
+#mycalendarTxt{
+    margin-top: 20px;
+}

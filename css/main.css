@@ -1,0 +1,427 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Caption text */
+.text {
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+/* 이미지 스타일링을 위한 CSS 코드 */
+.slideimage {
+    width: 100%;
+    height: 500px;
+    /* 원하는 스타일을 적용해주세요 */
+}
+
+.one {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev1:hover, .next1:hover {
+    opacity: 1; /* 호버 시 투명도 설정 */
+}
+
+.prev1 {
+    left: 0;
+    background-image: url('../css/image/tingL.png'); /* 왼쪽 화살표 이미지 경로 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 50px; /* 버튼의 크기를 조정합니다 */
+    margin-top: -30px; /* 중앙 정렬을 위해 마진을 조정합니다 */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.5; /* 초기에는 투명도 설정 */
+}
+
+.next1 {
+    right: 0;
+    background-image: url('../css/image/tingR.png'); /* 오른쪽 화살표 이미지 경로 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 50px; /* 버튼의 크기를 조정합니다 */
+    margin-top: -30px; /* 중앙 정렬을 위해 마진을 조정합니다 */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.5; /* 초기에는 투명도 설정 */
+}
+
+/* 슬라이드 */
+
+/* tfoot */
+footer.footer-no-gap {
+    margin-top: 0px;
+}
+
+footer {
+    margin-top: 150px;
+    background-color: #ffb6c1;
+    min-height: 100px;
+}
+
+footer p {
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer p a {
+    color: #fff;
+    transition: all .3s;
+    position: relative;
+    z-index: 3;
+}
+
+footer p a:hover {
+    opacity: 0.75;
+}
+
+/* tfoot */
+
+/* logo */
+.area .nav {
+    background: transparent;
+    display: flex;
+}
+
+.area .nav .logo h1 {
+    line-height: 100px;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #1e1e1e;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* logo */
+
+/* main menu */
+
+.area .nav li a.active {
+    color: #ffb6c1;
+}
+
+.area .nav li:hover a {
+    color: #ffb6c1;
+}
+
+.area ul.nav {
+    flex-basis: 100%;
+    margin-top: 30px;
+    justify-content: center;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    z-index: 999;
+}
+
+.area .nav ul.nav {
+    line-height: 100px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #1e1e1e;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.area .nav ul.nav li {
+    padding-left: 20px;
+    padding-right: 100px;
+    height: 100px;
+    line-height: 100px;
+}
+
+/* main menu */
+
+.cover {
+    background-size: cover;
+}
+
+
+
+* {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    padding: 0 15px;
+    font-size: 25px;
+}
+
+.icon {
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+.tab {
+    padding: 0 5px;
+}
+
+/* 메인 메뉴 */
+
+/* 캘린더 */
+
+.two {
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.travel-planner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.selected-date {
+    width: 300px;  /* 박스의 넓이 */
+    height: 100px;  /* 박스의 높이 */
+    padding: 20px;  /* 내부 여백 */
+    background-color: white;  /* 백그라운드 색상 */
+    border: 2px solid black;  /* 박스의 테두리 */
+    position: absolute;  /* 위치를 상대적으로 지정 */
+    right: 200px;  /* 오른쪽에서부터의 거리 */
+    top: 110px;  /* 위쪽에서부터의 거리 */
+  }
+  
+  .selected-date h3 {
+    margin: 5px 0;  /* 상하 여백 */
+  }
+
+.calendar {
+    background-color: white;
+    width: 500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .month {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .days {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .day {
+    width: 30px;
+    text-align: center;
+  }
+  
+  .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    
+  }
+  
+  .date {
+    text-align: center;
+    padding: 5px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    
+  }
+  
+  .date:hover {
+    background-color: #ccc;
+  }
+  
+
+  /* 캘린더 */
+
+  /* 추천여행지 */
+
+  #recommended-destinations {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .destination-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .destination-card h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .destination-card p {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+   /* 추천여행지 */

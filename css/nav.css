@@ -1,0 +1,37 @@
+
+#nadeuliNav> li:first-of-type{
+    margin-top: 60px;
+}
+#nadeuliNav > li{
+    cursor: pointer;
+}
+#nadeuliNav > li>.nav-content{
+    padding: 0;
+}
+.nav-content>li>a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 50px;
+    text-decoration: none;
+    color: #378CE7;
+}
+.nav-content>li>ul>li>a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 30px;/*너무 많이 잡으면 nav 영역 넘어가 content영역 침범!*/
+    text-decoration: none;
+    color: #378CE7;
+    font-size: 12.8px;/*하위 항목은 점점 글씨가 작아지나 여기는 너무 작아져서 바로 상위 항목과 같은 글씨 크기로 맞춤*/
+}
+.nav-content>li:first-child{
+    margin-top: 3px;
+}
+#nadeuliNav li {
+    position: relative;
+    list-style-type: none;
+    text-align: left;
+    margin-top: 5px;
+    display: inline-block;
+}

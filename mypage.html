@@ -4,45 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./mypage3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/miniP.css">
+    <link rel="stylesheet" type="text/css" href="./css/mypage3.css">
+    <link rel="stylesheet" type="text/css" href="./css/nav.css">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <div class="profile"></div>
-            <ul>
-                <li>사이트 이름</li>
-                <li>메뉴1</li>
-                <li>메뉴2</li>
-                <li>메뉴3</li>
-                <li>메뉴4</li>
-            </ul>
-        </div>
-    </div>
+   
+    <header></header>
+ 
 
     <div id="mypageContent">
         <div id="nav" >
-            <p style="padding-bottom: 5px; font-size: 1.3em;color: white;border-bottom: white dotted; display: inline-block;">마이페이지</p>
-            <ul id="smallNav">
-                <div>
-                    <li>
-                        <p>&emsp13;회원정보관리</p>
-                        <ul>
-                            <li>회원정보 수정</li>
-                            <li>내가 쓴 글</li>
-                            <li>내 좋아요한 글</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p>&emsp13;나의 일정관리</p>
-                        <ul>
-                            <li>캘린더 보기</li>
-                            <li>캘린더 작성하기</li>
-                            <li>캘린더 수정하기</li>
-                        </ul>
-                    </li>
-                </div>
-            </ul>
         </div>
 
         <div id="content">
@@ -70,27 +43,90 @@
                 <div class="contentBox" id="contentBox1">
                     <div class="boxContent">
                         <div id="box1ContentImg"></div>
+                        <strong>나의 대표 글</strong><br><br>
                         <div id="box1Content">
-                            <strong>최근 작성 글</strong><br><br>
-                            여기에 뭔가 글을 써야겠지. 무슨말이 좋을까.일단
-                            아무렇게나 써두면 미래의 내가 수습하겠지. 집에 가고싶다.
-                            근데 할 것이 산 더미라서 집에 가지를 못하네. 내 몸이 한 
-                            3개쯤 되면 집에 빨리 갈 수 있을까? 몸이 3개면 먹일 입도 
-                            3개라 똑같겠지. 살기 참 힘들다.
+                            
+                            
+                            <div id="box1Img"></div>
+                            <div id="box1Txt">
+                                여기에 뭔가 글을 써야겠지. 무슨말이 좋을까.일단
+                                아무렇게나 써두면 미래의 내가 수습하겠지. 집에 가고싶다.
+                                근데 할 것이 산 더미라서 집에 가지를 못하네. 내 몸이 한 
+                                3개쯤 되면 집에 빨리 갈 수 있을까? 몸이 3개면 먹일 입도 
+                                3개라 똑같겠지. 살기 참 힘들다.
+                            </div>
                         </div>
                     </div>
                 </div>
-
+                <div style="height: 30px; background-color: white;"></div>
                 <div class="contentBox">
                     <div class="boxContent">
                         <div id="box2Content">
                             <strong>나의 캘린더</strong><br><br>
-                            <div id="myCalendar"></div>    
+                            <div id="myCalendarImg">
+                                <section class="calender_section">
+                                    <div class="calender_container">
+                            
+                                      <h2>캘린더</h2>
+                            
+                                      <div class="travel_planner">
+                                        <div class="calendar">
+                                          <div class="header">
+                                            <button class="prev_btn">&lt;</button>
+                                            <h2 class="month">월</h2>
+                                            <button class="next_btn">&gt;</button>
+                                          </div>
+                            
+                                          <div class="days">
+                                            <div class="day">일</div>
+                                            <div class="day">월</div>
+                                            <div class="day">화</div>
+                                            <div class="day">수</div>
+                                            <div class="day">목</div>
+                                            <div class="day">금</div>
+                                            <div class="day">토</div>
+                                          </div>
+                            
+                                          <div class="dates">
+                                            <!-- 날짜를 동적으로 생성하여 추가 -->
+                                          </div>
+                            
+                                          <br>
+                            
+                                          <div class="selected_date">
+                                            <div>
+                                              <h3>선택된 날짜: <span id="selected-date"></span></h3>
+                                              <h3>선택된 요일: <span id="selected-day"></span></h3>
+                                              <h3>예정된 행사: <span id=""></span></h3>
+                                            </div>
+                                          </div>
+                            
+                                        </div>
+                            
+                                       
+                            
+                                      </div>
+                                    </div>
+                                  </section>
+                            </div><!--캘린더 끝-->
+                            <div id="mycalendarTxt">
+                                캘린더 훔쳤어요.<br>
+
+                                홍길동님의 가장 가까운 일정은 <b>2024년 03월 13일 목요일</b>에 예정되어있습니다.<br>
+                                예정된 행사는 <b>벚꽃놀이</b>입니다. 즐거운 일정 되시길 바랍니다.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<hr>
+    <footer></footer>
 </body>
+
+<script src="http://code.jQuery.com/jquery-3.7.1.min.js"></script>
+<script src="./js/miniP.js"></script>
+<script src="./js/mypage.js"></script>
+
 </html>

@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: scroll;
+    min-width: 770px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+/*header*/
+#header {
+    background-color: #171C22;
+    color: #FFECCF;
+    padding: 10px 0;
+    font-weight: bolder;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+#header .profile {
+    float: right;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+#header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#header ul li {
+    float: left;
+    display: block;
+    padding: 0 10px;
+    line-height: 50px;
+}
+#header ul li:first-child {
+   padding-right: 10%;
+}
+/*mypageContent*/
+#mypageContent {
+    display: flex;
+}
+
+/*content nav*/
+#nav {
+    width: 25%;
+    padding: 17px;
+    background-image: url('./img/KakaoTalk_20240307_195544950_04.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+    min-height: 100vh;
+    color: #FFECCF;
+    font-weight: bolder;
+}
+
+#nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #1B1F28;
+    height: 100vh;
+}
+#smallNav > div{
+    background-color: #FFECCF;
+    padding: 5px 0 5px 10px;
+}
+#smallNav > #navGradient{
+    margin-top: 0;
+    background: linear-gradient(
+        #FFECCF,
+        transparent 50%
+    );
+    min-height: 100vh;
+}
+#nav> ul > li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+#nav ul ul{
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+#nav ul ul li {
+    font-weight:lighter;
+    font-size: 0.95em;
+    margin-left: 20px;
+}
+
+/*contennt*/
+#content {
+    width: 75%;
+    padding: 5% ;
+    box-sizing: border-box;
+    
+}
+#profile_userIntro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#pofileSet{
+    display: inline-block;
+}
+.profile {
+    background-color: #FFECCF;
+    border-radius: 50%;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url('./img/제목을\ 입력해주세요_-001.png');
+    background-size: cover;
+    border: 1px #1B1F28 solid;  
+    margin-bottom: 15px;
+}
+#ChangeprofileImg{
+    text-align: center;
+}
+#userIntro {
+    margin-top: 10px;
+    padding: 15px;
+    display: inline-block;
+    padding-left: 10px;
+    background-color: #FFECCF;
+    width: calc(86% - 115px);
+    min-width: 10%;
+    border: 1px #1B1F28 solid;
+    height: auto;
+    font-size: 0.95em;
+}
+
+#boxes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.contentBox {
+    width: 40%;
+    height: 300px; /* 원하는 높이로 수정 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    background-color: #FFECCF;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px #1B1F28 solid;
+    font-weight: bolder;
+}
+#contentBox1{
+    border: 1px #1B1F28 solid;
+}
+#box1Content{
+    padding-top: 10px;
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+
+#myCalendar{
+    background-image: url('./img/c.png');
+    background-size: cover;
+    min-width: 35%;
+    height: 150px;
+}
